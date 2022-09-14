@@ -1,9 +1,12 @@
 package com.sem.daggersimple.domain
 
-class StringUseCase(private val stringCall: StringCall) {
+import com.sem.daggersimple.data.StringRepository
+import javax.inject.Inject
+
+class StringUseCase @Inject constructor(private val repository: StringRepository) {
 
     fun getString() : String {
-        return stringCall.getString()
+        return repository.toString()
     }
 
 }

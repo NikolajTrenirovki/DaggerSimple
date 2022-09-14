@@ -1,11 +1,10 @@
 package com.sem.daggersimple.data
 
 import com.sem.daggersimple.domain.StringCall
+import javax.inject.Inject
 
-class StringRepository(private val str: String) : StringCall {
+class StringRepository @Inject constructor() {
 
-    override fun getString() : String {
-        return str
-    }
+    override fun toString() = "какой-то текст"
 
 }

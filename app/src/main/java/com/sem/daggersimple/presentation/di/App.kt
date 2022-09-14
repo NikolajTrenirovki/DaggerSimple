@@ -1,6 +1,7 @@
 package com.sem.daggersimple.presentation.di
 
 import android.app.Application
+import android.content.Context
 
 class App : Application() {
 
@@ -12,3 +13,9 @@ class App : Application() {
     }
 
 }
+
+val Context.appComponent: AppComponent
+    get() = when(this) {
+        is App -> appComponent
+        else -> this.applicationContext.appComponent
+    }
