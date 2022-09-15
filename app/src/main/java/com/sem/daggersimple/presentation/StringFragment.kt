@@ -13,7 +13,7 @@ import com.sem.daggersimple.data.StringRepository
 import com.sem.daggersimple.databinding.FragmentStringBinding
 import javax.inject.Inject
 import androidx.lifecycle.Observer
-import com.sem.daggersimple.presentation.di.appComponent
+//import com.sem.daggersimple.presentation.di.appComponent
 
 class StringFragment : Fragment() {
 
@@ -25,7 +25,7 @@ class StringFragment : Fragment() {
     override fun onAttach(context: Context) {
         super.onAttach(context)
 
-        
+
         // Grabs the registrationComponent from the Activity and injects this Fragment
        // (activity as MainActivity).
     }

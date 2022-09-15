@@ -17,7 +17,7 @@ object AppModule {
 
     // в видео https://www.youtube.com/watch?v=xif-1cnSHxs&list=PL0SwNXKJbuNkYFUda5rlA-odAVyWItRCP&index=3&ab_channel=AndroidBroadcast.%D0%92%D1%81%D0%B5%D0%BE%D0%B1%D0%90%D0%BD%D0%B4%D1%80%D0%BE%D0%B8%D0%B4%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B5
     // методы с @Provides удалялись, после добавления в классы @Inject constructor
-    @Provides
+/*    @Provides
     fun provideStringViewModel(stringUseCase: StringUseCase) : StringViewModel {
 
         return StringViewModel(stringUseCase)
@@ -32,6 +32,6 @@ object AppModule {
     @Provides
     fun provideStringRepository() : StringRepository {
         return StringRepository()
-    }
+    }*/
 
 }
